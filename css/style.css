@@ -1,11 +1,14 @@
 /* Global CSS */
 
 
-#body { background-color:#eee; padding:0; margin:0;
+#body { background-color: purple; padding:0; margin:0;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 /* Controlling the slide effect */
+
+
+}
 
 #menu {
     display: none;
@@ -113,11 +116,28 @@ nav#menu li a:active, #desktop_menu li a:active {  }
     background: -webkit-linear-gradient(-45deg,  #28b9ca 0%,#0e8da6 100%);
     background: linear-gradient(135deg,  #28b9ca 0%,#0e8da6 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#28b9ca', endColorstr='#0e8da6',GradientType=1 );
+
+}
+
+
+.banner img {
+
+    float: right;
+    margin-left: 400px;
+}}
 }
 
 /* Info area CSS */
 
-.info_box {   }
+.info_box {
+    width: 100%;
+    Height:300px;
+    background-color: #bc3183;
+
+}
+.info_box p { color: lightpink;
+
+}
 .info_left {
     float:left; width: 77.7343%; color: #fff; height: 245px;
     display:-ms-flexbox;
@@ -166,11 +186,17 @@ nav#menu li a:active, #desktop_menu li a:active {  }
 .three_right {
     width: 33.33333333333%;
     height: 294px;
-    background: red;
+    background: purple;
     float: left;
 
-}
 
+}
+.three_right img {
+    float: right;
+    margin-left: 600px;
+
+
+}
 /* Footer area CSS */
 
 .footer {
@@ -181,7 +207,7 @@ nav#menu li a:active, #desktop_menu li a:active {  }
 
 
 /* Media Query section */
-@media all and (max-width: 480px) {
+@media all and (max-width: 400px) {
 
     .top  {   }
 
@@ -192,7 +218,16 @@ nav#menu li a:active, #desktop_menu li a:active {  }
 
     }
 
-    .banner {   }
+    .banner {
+        width: 100%;
+        height: 578px;
+        background: #28b9ca;
+        background: -moz-linear-gradient(-45deg,  #28b9ca 0%, #0e8da6 100%);
+        background: -webkit-linear-gradient(-45deg,  #28b9ca 0%,#0e8da6 100%);
+        background: linear-gradient(135deg,  #28b9ca 0%,#0e8da6 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#28b9ca', endColorstr='#0e8da6',GradientType=1 );
+
+      }
     .banner_toptext {  }
     .banner h2 {  }
     .banner h3 {  }
@@ -202,8 +237,8 @@ nav#menu li a:active, #desktop_menu li a:active {  }
     .info_left {   }
     .info_right {   }
 
-    .three_left { }
-    .three_mid {   }
-    .three_right {  }
+    .three_left {width: 100%; }
+    .three_mid {  width: 100%;  }
+    .three_right { width: 100%;  }
 
     .footer_text {  }
